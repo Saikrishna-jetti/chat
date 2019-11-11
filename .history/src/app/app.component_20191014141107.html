@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="topbar">{{title}}</div>
+    <div class="chatarea">
+
+    </div>
+    <div class="inputarea">
+        <form (submit)='addChat()'>
+            <input class="textbox" name="message" [(ngModel)="message")] type="text"/>
+            <button type="submit" class="sendbutton">Send</button>
+        </form>
+    </div>
+</div>
